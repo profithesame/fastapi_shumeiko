@@ -15,3 +15,15 @@ class STask(STaskAdd):
 class STaskId(BaseModel):
     ok: bool = True
     task_id: int 
+
+#############################################
+# Odd or even number
+#############################################
+
+class Number(BaseModel):
+    value: int
+
+class OddEvenResponse(BaseModel):
+    code: int
+    message: str
+    result: bool
